@@ -1,8 +1,4 @@
-// =============================================
-// STEP 1: Set up the image array 
-// =============================================
-// Array of all images to cycle through
-// Customize these paths to your own images
+
 const images = [
   './assets/image-content/image-1.png',
   './assets/image-content/image-2.png',
@@ -12,22 +8,21 @@ const images = [
   './assets/image-content/image-6.png'
 ];
 
-// =============================================
-// STEP 2: Reference HTML elements 
-// =============================================
-// Connect to the elements we need to change
-const imageContent = document.querySelector('.image-content');  // Image container
-const mainButton = document.getElementById('main-button');      // Image switch button
-const finalMessage = document.querySelector('.final-message');  // Final message
 
-// =============================================
-// STEP 3: Track what image we're at 
+
+// Connect to the elements
+const imageContent = document.querySelector('.image-content');  
+const mainButton = document.getElementById('main-button');     
+const finalMessage = document.querySelector('.final-message');  
+
+
+// Track what image we're at 
 // =============================================
 // Start with the first image (index 0)
 let currentIndex = 0;
 
-// =============================================
-// STEP 4: Update image function 
+
+//  Update image function 
 // =============================================
 // Function to change images with fade effect
 function updateImage() {
@@ -48,14 +43,12 @@ function updateImage() {
   };
 }
 
-// =============================================
-// STEP 5: Initial image display 
-// =============================================
+
+
 // Show first image when page loads
 updateImage();
 
-// =============================================
-// STEP 6: Button click handler 
+
 // =============================================
 // Change image when button is clicked
 mainButton.addEventListener('click', () => {
